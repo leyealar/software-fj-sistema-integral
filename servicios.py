@@ -1,15 +1,10 @@
 """
-Módulo 3: Servicios especializados - Software FJ
-
-Estudiante responsable: Leidy Yesenia Álvarez Arias
-Curso: Programación - 213023
-Fase 4 - UNAD
-
-Contiene la clase abstracta Servicio y las clases:
-ReservaSala, AlquilerEquipo y AsesoriaEspecializada.
+Modulo 3: Servicios especializados - Software FJ
+Estudiante responsable: Leidy Yesenia Alvarez Arias
+Curso: Programacion (213023) - UNAD
+Fase 4 - Practicas simuladas
+Contiene la clase abstracta Servicio y sus tres clases especializadas.
 """
-
-"""Servicios de Software FJ: abstraccion, herencia y polimorfismo."""
 
 import math
 from abc import ABC, abstractmethod

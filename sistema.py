@@ -164,3 +164,14 @@ class SistemaSoftwareFJ:
             "servicios": len(self._servicios),
             "reservas": len(self._reservas),
         }
+
+    def cerrar(self):
+        """Vacía y cierra los manejadores del archivo de logs.
+
+        Este método libera el archivo para que pueda moverse, eliminarse o
+        limpiarse después de las pruebas, especialmente en Windows.
+        """
+        for handler in list(self._logger.handlers):
+            self._logger.removeHandler(handler)
+            handler.flush()
+            handler.close()

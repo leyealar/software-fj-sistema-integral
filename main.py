@@ -1,14 +1,11 @@
 """
-Sistema Integral de Gestión - Software FJ
-
-Estudiante: Leidy Yesenia Álvarez Arias
-Programa: Ingeniería de Sistemas
-Curso: Programación - 213023
-Actividad: Fase 4 - Prácticas simuladas
-UNAD
+Sistema Integral de Gestion - Software FJ
+Estudiante: Leidy Yesenia Alvarez Arias
+Programa: Ingenieria de Sistemas - UNAD
+Curso: Programacion (213023)
+Actividad: Fase 4 - Practicas simuladas
+Ejecucion de demostracion con 16 operaciones simuladas.
 """
-
-"""Ejecucion de demostracion con mas de diez operaciones simuladas."""
 
 from clientes import Cliente
 from excepciones import ErrorSoftwareFJ
@@ -79,6 +76,7 @@ def ejecutar_demostracion():
     print("Los eventos y errores se registraron en logs/software_fj.log")
     print("La demostracion termino sin detenerse por los errores controlados.")
     print("=" * 72)
+    sistema.cerrar()
 
 
 if __name__ == "__main__":

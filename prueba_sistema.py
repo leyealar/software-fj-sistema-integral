@@ -32,6 +32,9 @@ class PruebasSistemaSoftwareFJ(unittest.TestCase):
             self.sistema.registrar_servicio(servicio)
 
     def tearDown(self):
+        # Cierra el FileHandler antes de borrar el directorio temporal.
+        # En Windows, un archivo abierto no se puede eliminar.
+        self.sistema.cerrar()
         self.temp.cleanup()
 
     def test_entidad_es_abstracta(self):

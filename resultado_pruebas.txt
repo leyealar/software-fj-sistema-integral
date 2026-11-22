@@ -23,6 +23,6 @@ test_tarifa_negativa_rechazada (prueba_sistema.PruebasSistemaSoftwareFJ.test_tar
 test_telefono_invalido (prueba_sistema.PruebasSistemaSoftwareFJ.test_telefono_invalido) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.012s
+Ran 23 tests in 0.011s
 
 OK

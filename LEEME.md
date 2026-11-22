@@ -23,3 +23,12 @@ La carpeta `logs` se crea automaticamente. El archivo `logs/software_fj.log` reg
 ## Nota sobre el trabajo colaborativo
 
 Este paquete contiene el desarrollo individual realizado por Leidy Yesenia Alvarez Arias a partir del enunciado del Anexo 3. Se comparte para su revision. No contiene una integracion con el codigo de los otros integrantes, ya que no se dispuso de los archivos base ni del repositorio grupal en el intercambio documentado.
+
+
+## Cierre de logs
+
+El sistema dispone del metodo `cerrar()` para vaciar y cerrar el manejador del archivo de logs. Las pruebas lo llaman antes de eliminar sus carpetas temporales; esto evita bloqueos de archivos en Windows.
+
+## Autoria
+
+Desarrollo individual de Leidy Yesenia Alvarez Arias, curso Programacion (213023), UNAD.

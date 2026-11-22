@@ -43,3 +43,10 @@ La solucion utiliza excepciones personalizadas, bloques `try/except`, `try/excep
 ## Alcance y transparencia
 
 Esta version se presenta como desarrollo individual construido con base en el enunciado del Anexo 3. Incluye los componentes funcionales del sistema para su revision. No se afirma que exista una integracion con un repositorio grupal ni que el codigo haya sido integrado con los aportes de otros estudiantes. El repositorio individual se utiliza para conservar y compartir el desarrollo realizado por la estudiante.
+
+
+## Autoria del desarrollo individual
+
+Estudiante: Leidy Yesenia Alvarez Arias - Ingenieria de Sistemas, UNAD.
+
+Este repositorio contiene una implementacion individual basada en el enunciado del Anexo 3. No representa una integracion con el codigo de otros integrantes.
