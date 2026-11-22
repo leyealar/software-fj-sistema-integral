@@ -1,35 +1,45 @@
-# Sistema Integral de Gestión – Software FJ
+# Sistema Integral de Gestion - Software FJ
 
-## Curso: Programación – 213023
-Universidad Nacional Abierta y a Distancia (UNAD)
+**Curso:** Programacion (213023) - UNAD  
+**Actividad:** Fase 4 - Practicas simuladas  
+**Ejercicio 1:** Sistema Integral de Gestion de Clientes, Servicios y Reservas
 
-## Descripción del aporte
+## Descripcion
 
-Este repositorio contiene el desarrollo del módulo 3 de la Fase 4, correspondiente a la clase abstracta Servicio y sus tres servicios especializados.
+Aplicacion de consola desarrollada en Python para administrar clientes, servicios y reservas de Software FJ. La informacion se mantiene en listas internas durante la ejecucion; no se utiliza un motor de base de datos. Los eventos y errores se registran en `logs/software_fj.log`.
 
-El desarrollo se realizó utilizando programación orientada a objetos en Python, incorporando validaciones y manejo de errores.
+## Componentes
 
-## Clases desarrolladas
+- `entidades.py`: clase abstracta `Entidad`.
+- `clientes.py`: clase `Cliente` con encapsulacion y validaciones de correo y telefono.
+- `servicios.py`: clase abstracta `Servicio` y las clases `ReservaSala`, `AlquilerEquipo` y `AsesoriaEspecializada`.
+- `reservas.py`: clase `Reserva` con confirmacion, cancelacion, procesamiento y estados.
+- `excepciones.py`: excepciones personalizadas para datos invalidos, duplicados, servicios y reservas.
+- `registro.py`: configuracion del archivo de logs.
+- `sistema.py`: administracion de listas internas y operaciones del sistema.
+- `main.py`: demostracion de 16 operaciones, incluidos casos validos e invalidos.
+- `prueba_sistema.py`: 23 pruebas automatizadas con `unittest`.
 
-- Servicio: clase abstracta que establece la estructura general de los servicios.
-- ReservaSala: permite representar el servicio de reserva de salas.
-- AlquilerEquipo: representa el alquiler de equipos y valida las unidades disponibles.
-- AsesoriaEspecializada: representa los servicios de asesoría profesional.
+## Requisitos
 
-## Archivos del repositorio
+Python 3.10 o superior. No se requieren paquetes externos.
 
-- servicios.py: contiene las clases y sus métodos.
-- prueba_servicios.py: contiene las pruebas del módulo.
-- LEEME.md: incluye indicaciones para la integración con el proyecto grupal.
+## Ejecutar la demostracion
 
-## Ejecución
+```bash
+python main.py
+```
 
-Para ejecutar las pruebas, abrir una terminal en la carpeta del proyecto y utilizar:
+## Ejecutar las pruebas
 
-python prueba_servicios.py
+```bash
+python -m unittest -v prueba_sistema.py
+```
 
-## Autora del aporte
+## Manejo de errores y costos
 
-Leidy Yesenia Álvarez Arias
+La solucion utiliza excepciones personalizadas, bloques `try/except`, `try/except/else/finally` y encadenamiento con `raise ... from ...`. Los errores y eventos se guardan en `logs/software_fj.log`. El calculo de costos admite distintas variantes mediante parametros opcionales para duracion, cantidad, impuesto y descuento.
 
-Programa de Ingeniería de Sistemas – UNAD
+## Alcance y transparencia
+
+Esta version se presenta como desarrollo individual construido con base en el enunciado del Anexo 3. Incluye los componentes funcionales del sistema para su revision. No se afirma que exista una integracion con un repositorio grupal ni que el codigo haya sido integrado con los aportes de otros estudiantes. El repositorio individual se utiliza para conservar y compartir el desarrollo realizado por la estudiante.

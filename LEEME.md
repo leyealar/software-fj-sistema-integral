@@ -1,61 +1,25 @@
-# Modulo 3 - Servicios | Software FJ
-
-## Archivos
-
-- `servicios.py`: clase abstracta `Servicio` y las clases `ReservaSala`, `AlquilerEquipo` y `AsesoriaEspecializada`.
-- `prueba_servicios.py`: pruebas automaticas de comportamiento, calculo de costos y validacion de errores.
+# LEEME - Software FJ, Fase 4
 
 ## Requisitos
 
-Python 3. No requiere instalar paquetes externos; utiliza `abc`, `math` y `unittest` de la biblioteca estandar.
+- Python 3.10 o superior.
+- No se necesitan librerias externas.
 
-## Como ejecutar
+## Ejecucion
 
-Desde una terminal ubicada en esta carpeta:
+1. Descargar o clonar el repositorio completo.
+2. Abrir una terminal en la carpeta donde se encuentra `main.py`.
+3. Ejecutar `python main.py` para realizar las 16 operaciones simuladas.
+4. Ejecutar `python -m unittest -v prueba_sistema.py` para ejecutar las 23 pruebas.
 
-```bash
-python -m unittest -v prueba_servicios.py
-```
+## Archivos
 
-Tambien se puede ejecutar directamente:
+El proyecto se separa en modulos: `entidades.py`, `clientes.py`, `servicios.py`, `reservas.py`, `excepciones.py`, `registro.py`, `sistema.py`, `main.py` y `prueba_sistema.py`.
 
-```bash
-python prueba_servicios.py
-```
+## Logs
 
-## Ejemplo de uso
+La carpeta `logs` se crea automaticamente. El archivo `logs/software_fj.log` registra los eventos y errores de la aplicacion. No se usa una base de datos; los datos se administran mediante objetos y listas internas.
 
-```python
-from servicios import ReservaSala, AlquilerEquipo, AsesoriaEspecializada
+## Nota sobre el trabajo colaborativo
 
-sala = ReservaSala("S01", "Sala de reuniones", 50000, 10)
-equipo = AlquilerEquipo("E01", "Proyector multimedia", 30000, 5)
-asesoria = AsesoriaEspecializada("A01", "Asesoria tecnologica", 80000, "Sistemas")
-
-print(sala.describir())
-print(sala.calcular_costo(duracion=2, impuesto=19, descuento=10))
-print(equipo.calcular_costo(duracion=3, cantidad=2))
-print(asesoria.calcular_costo(duracion=2))
-```
-
-## Decisiones de implementacion
-
-- `Servicio` es una clase abstracta. No se crean objetos directamente de ella.
-- Las tres clases concretas heredan de `Servicio` y redefinen `calcular_costo`, `describir` y `validar_parametros`; esto permite aplicar herencia y polimorfismo.
-- Los atributos se mantienen encapsulados y se consultan mediante propiedades de solo lectura.
-- Las validaciones rechazan textos vacios, tarifas no positivas, numeros no finitos, duraciones incorrectas, cantidades fuera de rango, porcentajes distintos del intervalo 0 a 100 y servicios no disponibles.
-- `calcular_costo` acepta parametros opcionales de cantidad, impuesto y descuento para ofrecer distintas formas de calcular el valor sin duplicar metodos.
-- El modulo utiliza `ValueError` para los datos u operaciones no validas. En la integracion, el responsable del modulo de excepciones puede sustituir estas excepciones por las excepciones personalizadas del proyecto.
-- El registro central de eventos y errores debe conectarse con el manejador de logs del proyecto grupal para evitar crear registros duplicados o incompatibles.
-
-## Indicacion para integrar con el proyecto grupal
-
-Este modulo se entrega de forma independiente. Para integrarlo:
-
-1. Revisar la clase `Entidad` del proyecto y decidir si `Servicio` debe heredar de ella, en lugar de inicializar por separado `codigo` y `nombre`.
-2. Adaptar las validaciones para utilizar las excepciones personalizadas definidas por el equipo, conservando los mensajes y condiciones de validacion.
-3. Conectar el registro de errores y eventos con el archivo de logs central del proyecto.
-4. Mantener los nombres de las clases y metodos o actualizar los imports del programa principal si el equipo acuerda otros nombres.
-5. Ejecutar nuevamente las pruebas del modulo y las pruebas generales del sistema despues de la integracion.
-
-**Importante:** la integracion con `Entidad`, las excepciones personalizadas y el archivo de logs depende de los archivos centrales del equipo, que no hacen parte de este modulo independiente.
+Este paquete contiene el desarrollo individual realizado por Leidy Yesenia Alvarez Arias a partir del enunciado del Anexo 3. Se comparte para su revision. No contiene una integracion con el codigo de los otros integrantes, ya que no se dispuso de los archivos base ni del repositorio grupal en el intercambio documentado.

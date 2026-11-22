@@ -1,0 +1,75 @@
+========================================================================
+SISTEMA INTEGRAL DE GESTION - SOFTWARE FJ
+Demostracion de clientes, servicios, reservas y manejo de excepciones
+========================================================================
+
+OPERACION 1: Registrar cliente valido
+Resultado: correcto - Cliente C001: Laura Gomez | Correo: laura.gomez@example.com | Telefono: 3001234567
+Fin de la operacion 1.
+
+OPERACION 2: Rechazar cliente con correo invalido
+Resultado: error controlado - El correo electronico no tiene un formato valido.
+Fin de la operacion 2.
+
+OPERACION 3: Registrar segundo cliente valido
+Resultado: correcto - Cliente C002: Carlos Ruiz | Correo: carlos.ruiz@example.com | Telefono: 3017654321
+Fin de la operacion 3.
+
+OPERACION 4: Registrar servicio de reserva de sala
+Resultado: correcto - Sala S001: Sala de reuniones | Capacidad: 12 personas | Tarifa por hora: $50,000.00
+Fin de la operacion 4.
+
+OPERACION 5: Registrar servicio de alquiler de equipos
+Resultado: correcto - Equipo E001: Proyector multimedia | Unidades disponibles: 4 | Tarifa por dia: $30,000.00
+Fin de la operacion 5.
+
+OPERACION 6: Registrar servicio de asesoria
+Resultado: correcto - Asesoria A001: Asesoria tecnologica | Especialidad: Sistemas | Tarifa por hora: $80,000.00
+Fin de la operacion 6.
+
+OPERACION 7: Rechazar servicio con tarifa negativa
+Resultado: error controlado - El campo tarifa base debe ser un numero finito mayor que cero.
+Fin de la operacion 7.
+
+OPERACION 8: Crear reserva de sala
+Resultado: correcto - R001 | Cliente: Laura Gomez | Servicio: Sala de reuniones | Duracion: 2.0 | Cantidad: 1 | Total: $119,000.00 | Estado: PENDIENTE
+Fin de la operacion 8.
+
+OPERACION 9: Confirmar reserva R001
+Resultado: correcto - CONFIRMADA
+Fin de la operacion 9.
+
+OPERACION 10: Procesar reserva R001
+Resultado: correcto - PROCESADA
+Fin de la operacion 10.
+
+OPERACION 11: Crear reserva de equipos dentro del inventario
+Resultado: correcto - R002 | Cliente: Carlos Ruiz | Servicio: Proyector multimedia | Duracion: 3.0 | Cantidad: 2 | Total: $171,000.00 | Estado: PENDIENTE
+Fin de la operacion 11.
+
+OPERACION 12: Confirmar reserva de equipos y descontar inventario
+Resultado: correcto - CONFIRMADA
+Fin de la operacion 12.
+
+OPERACION 13: Rechazar reserva que supera el inventario restante
+Resultado: error controlado - La solicitud de reserva R003 no pudo completarse.
+Fin de la operacion 13.
+
+OPERACION 14: Crear reserva de asesoria y cancelarla
+Resultado: correcto - R004 | Cliente: Laura Gomez | Servicio: Asesoria tecnologica | Duracion: 1.5 | Cantidad: 1 | Total: $142,800.00 | Estado: PENDIENTE
+Fin de la operacion 14.
+
+OPERACION 15: Cancelar reserva pendiente R004
+Resultado: correcto - CANCELADA
+Fin de la operacion 15.
+
+OPERACION 16: Rechazar reserva por parametro obligatorio faltante
+Resultado: error controlado - La solicitud de reserva R005 no pudo completarse.
+Fin de la operacion 16.
+
+========================================================================
+RESUMEN FINAL
+{'clientes': 2, 'servicios': 3, 'reservas': 3}
+Los eventos y errores se registraron en logs/software_fj.log
+La demostracion termino sin detenerse por los errores controlados.
+========================================================================

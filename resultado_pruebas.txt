@@ -1,0 +1,28 @@
+test_cantidad_y_parametros_opcionales_de_calculo (prueba_sistema.PruebasSistemaSoftwareFJ.test_cantidad_y_parametros_opcionales_de_calculo) ... ok
+test_codigo_cliente_duplicado (prueba_sistema.PruebasSistemaSoftwareFJ.test_codigo_cliente_duplicado) ... ok
+test_confirmar_y_procesar_reserva (prueba_sistema.PruebasSistemaSoftwareFJ.test_confirmar_y_procesar_reserva) ... ok
+test_correo_invalido (prueba_sistema.PruebasSistemaSoftwareFJ.test_correo_invalido) ... ok
+test_crear_reserva_correcta (prueba_sistema.PruebasSistemaSoftwareFJ.test_crear_reserva_correcta) ... ok
+test_entidad_es_abstracta (prueba_sistema.PruebasSistemaSoftwareFJ.test_entidad_es_abstracta) ... ok
+test_inventario_negativo_rechazado (prueba_sistema.PruebasSistemaSoftwareFJ.test_inventario_negativo_rechazado) ... ok
+test_inventario_se_descuenta_y_se_restaura_al_cancelar (prueba_sistema.PruebasSistemaSoftwareFJ.test_inventario_se_descuenta_y_se_restaura_al_cancelar) ... ok
+test_log_registra_eventos_y_errores (prueba_sistema.PruebasSistemaSoftwareFJ.test_log_registra_eventos_y_errores) ... ok
+test_no_cancelar_reserva_procesada (prueba_sistema.PruebasSistemaSoftwareFJ.test_no_cancelar_reserva_procesada) ... ok
+test_no_disponibilidad_en_servicio (prueba_sistema.PruebasSistemaSoftwareFJ.test_no_disponibilidad_en_servicio) ... ok
+test_no_procesar_sin_confirmar (prueba_sistema.PruebasSistemaSoftwareFJ.test_no_procesar_sin_confirmar) ... ok
+test_parametro_obligatorio_faltante (prueba_sistema.PruebasSistemaSoftwareFJ.test_parametro_obligatorio_faltante) ... ok
+test_registro_cliente_valido (prueba_sistema.PruebasSistemaSoftwareFJ.test_registro_cliente_valido) ... ok
+test_registro_de_tres_servicios (prueba_sistema.PruebasSistemaSoftwareFJ.test_registro_de_tres_servicios) ... ok
+test_reserva_con_cliente_inexistente (prueba_sistema.PruebasSistemaSoftwareFJ.test_reserva_con_cliente_inexistente) ... ok
+test_reserva_con_servicio_inexistente (prueba_sistema.PruebasSistemaSoftwareFJ.test_reserva_con_servicio_inexistente) ... ok
+test_reserva_no_disponible (prueba_sistema.PruebasSistemaSoftwareFJ.test_reserva_no_disponible) ... ok
+test_reserva_supera_inventario (prueba_sistema.PruebasSistemaSoftwareFJ.test_reserva_supera_inventario) ... ok
+test_servicio_es_abstracta (prueba_sistema.PruebasSistemaSoftwareFJ.test_servicio_es_abstracta) ... ok
+test_servicios_sobrescriben_describir_y_calcular (prueba_sistema.PruebasSistemaSoftwareFJ.test_servicios_sobrescriben_describir_y_calcular) ... ok
+test_tarifa_negativa_rechazada (prueba_sistema.PruebasSistemaSoftwareFJ.test_tarifa_negativa_rechazada) ... ok
+test_telefono_invalido (prueba_sistema.PruebasSistemaSoftwareFJ.test_telefono_invalido) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.012s
+
+OK

@@ -1,0 +1,28 @@
+============================================================
+PRUEBAS DEL MODULO DE SERVICIOS - SOFTWARE FJ
+============================================================
+
+--- DESCRIPCION Y VALIDACION ---
+Sala S01: Sala de reuniones | Capacidad: 10 personas | Tarifa por hora: $50,000.00
+Parametros validos: True
+Equipo E01: Proyector multimedia | Unidades disponibles: 5 | Tarifa por dia: $30,000.00
+Parametros validos: True
+Asesoria A01: Asesoria tecnologica | Especialidad: Sistemas | Tarifa por hora: $80,000.00
+Parametros validos: True
+
+--- CALCULO DE COSTOS ---
+Reserva de sala (2 horas): 100000.0
+Alquiler de 2 equipos por 3 dias: 180000.0
+Asesoria (2 horas con 19% de impuesto): 190400.0
+Sala con impuesto y descuento: 107100.0
+
+--- ERRORES CONTROLADOS ---
+Duracion negativa: error controlado - El campo duracion debe ser un numero finito mayor que cero.
+Cantidad mayor al inventario: error controlado - No hay suficientes equipos disponibles.
+Especialidad vacia: error controlado - El campo especialidad es obligatorio.
+Sala no disponible: error controlado - El servicio S02 - Sala cerrada no esta disponible.
+Impuesto fuera de rango: error controlado - El porcentaje de impuesto debe estar entre 0 y 100.
+Descuento negativo: error controlado - El porcentaje de descuento debe estar entre 0 y 100.
+Tarifa negativa: error controlado - El campo tarifa base debe ser un numero finito mayor que cero.
+
+Fin de las pruebas manuales del modulo de servicios.
